@@ -6,18 +6,16 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Data;
 
-import java.math.BigDecimal;
-import java.time.LocalDate;
-import java.util.Date;
-
-@Entity
 @Data
+@Entity
 public class Cliente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String usuario;
-    private String clave;
-    private String correo;
-
+    private String dni;
+    private String nombre;
+    private String apellidos;
+    private String telefono;
+    private String correoElectronico;
+    private String direccion;
 }
